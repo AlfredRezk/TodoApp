@@ -1,0 +1,11 @@
+PORT=5000
+NODE_ENV=development
+HOST=127.0.0.1
+MONGO_URI=mongodb+srv://alfred:password00@db.uyqbjts.mongodb.net/todoApi
+JWT_SECRET=666d9486c30e0c4006e1651a9836c33a8f064fe6acd2e499a8eca7d6c9ff0e90
+JWT_EXPIRE=30d
+JWT_COOKIE_EXPIRE=30
+EMAIL=devtestemail2024@gmail.com
+FROM_NAME=noreply@academy.io
+APP_PASSWORD=depe vkos shse anlr
+TOKEN_KEY=53f8954008bac6fd708909a5c440f06bdea53f488cb204e082d37afdba6de4fd
