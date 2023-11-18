@@ -29,7 +29,7 @@ npm start
 # Todo Backend API Specifications
 
 Create the backend for a Todo application. The frontend/UI will be created using ReactJs.  
-All of the functionality below needs to be fully implmented in this project.
+All of the functionality below needs to be fully implemented in this project.
 
 
 ### Category
@@ -43,26 +43,45 @@ All of the functionality below needs to be fully implmented in this project.
 - Update Category
 - Delete Category
 
+  ### Todo
+- List all Todoa
+- * Pagination, filtering, etc
+- Get single Todo
+- Create new Todo
+  * Authenticated users only
+  * Must have the role "admin"
+  * Only admin can create a Category
+- Update Todo
+- Delete Todo
+
+  ### User
+- List all Userd (Admin)
+- * Pagination, filtering, etc
+- Get single User
+- Create new User
+- Update User
+- Delete User
+
 ### Users & Authentication
-- Authentication will be ton using JWT/cookies
+- Authentication will be done using JWT/cookies
   * JWT and cookie should expire in 30 days
-- User registration
+- User Registration
   * Register as a "user" or "admin"
-  * Email verification will be send to the user to verify his/her email
+  * Email verification will be sent to the user to verify his/her email
   * Once registered, a token will be sent along with a cookie (token = xxx)
   * Passwords must be hashed
 - User login
-  * User can login with email and password
+  * User can log in with email and password
   * Plain text password will compare with stored hashed password
   * Once logged in, a token will be sent along with a cookie (token = xxx)
 - User logout
   * Cookie will be sent to set token = none
 - Get user
-  * Route to get the currently logged in user (via token)
+  * Route to get the currently logged-in user (via token)
 - Password reset (lost password)
   * User can request to reset password
-  * A hashed token will be emailed to the users registered email address
-  * A put request can be made to the generated url to reset password
+  * A hashed token will be emailed to the user's registered email address
+  * A put request can be made to the generated URL to reset the password
   * The token will expire after 10 minutes
 - Update user info
   * Authenticated user only
@@ -75,9 +94,9 @@ All of the functionality below needs to be fully implmented in this project.
 - Encrypt passwords and reset tokens
 - Prevent NoSQL injections
 - Add headers for security (helmet)
-- Prevent cross site scripting - XSS
+- Prevent cross-site scripting - XSS
 - Add a rate limit for requests of 100 requests per 10 minutes
-- Protect against http param polution
+- Protect against http param pollution
 - Use cors to make API public (for now)
 
 ## Documentation
