@@ -31,30 +31,6 @@ npm start
 Create the backend for a Todo application. The frontend/UI will be created using ReactJs.  
 All of the functionality below needs to be fully implmented in this project.
 
-### Bootcamps
-- List all bootcamps in the database
-   * Pagination
-   * Select specific fields in result
-   * Limit number of results
-   * Filter by fields
-- Search bootcamps by radius from zipcode
-  * Use a geocoder to get exact location and coords from a single address field
-- Get single bootcamp
-- Create new bootcamp
-  * Authenticated users only
-  * Must have the role "publisher" or "admin"
-  * Only one bootcamp per publisher (admins can create more)
-  * Field validation via Mongoose
-- Upload a photo for bootcamp
-  * Owner only
-  * Photo will be uploaded to local filesystem
-- Update bootcamps
-  * Owner only
-  * Validation on update
-- Delete Bootcamp
-  * Owner only
-- Calculate the average cost of all courses for a bootcamp
-- Calculate the average rating from the reviews for a bootcamp
 
 ### Category
 - List all Categories 
@@ -66,20 +42,6 @@ All of the functionality below needs to be fully implmented in this project.
   * Only admin can create a Category
 - Update Category
 - Delete Category
-
-  
-### Reviews
-- List all reviews for a bootcamp
-- List all reviews in general
-  * Pagination, filtering, etc
-- Get a single review
-- Create a review
-  * Authenticated users only
-  * Must have the role "user" or "admin" (no publishers)
-- Update review
-  * Owner only
-- Delete review
-  * Owner only
 
 ### Users & Authentication
 - Authentication will be ton using JWT/cookies
